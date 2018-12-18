@@ -1,0 +1,1332 @@
+@font-face {
+    font-family: 'Futura Light';
+    src: url("../fonts/futuralightc.otf");
+}
+
+@font-face {
+    font-family: 'Futura Bold';
+    src: url("../fonts/futurabold2.otf");
+}
+
+@font-face {
+    font-family: 'Futura Book';
+    src: url("../fonts/futurabookc.otf");
+}
+
+@font-face {
+    font-family: 'Futura Demi';
+    src: url("../fonts/futurademic.otf");
+}
+
+@font-face {
+    font-family: 'Katherine Plus';
+    src: url("../fonts/Katherine.otf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #000;
+    font-size: 3.75rem;
+    font-family: 'Futura Book';
+    margin: 5rem 0 4.25rem 0;
+}
+
+/*end of common content*/
+
+.section {
+    width: 100%;
+    display: flex;
+}
+
+/*Taras styles //////////////////////////////////////////////*/
+
+
+/*header style ///////////////////////////////////*/
+
+.main-page-header {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    align-items: center;
+    position: fixed;
+    font-family: 'Futura Book';
+    font-weight: 600;
+    color: #000;
+    z-index: 10;
+}
+
+.small-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-header-item {
+    font-size: .9375rem;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+.small-logo-img {
+    max-width: 55px;
+    max-height: 6vh;
+    margin-right: 2.5rem;
+}
+
+.nav-header-item a:active,
+.nav-header-item a:visited,
+.nav-header-item a:link {
+    color: #000;
+}
+
+.nav-header-item a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.contact-tel {
+    font-size: .9375rem;
+    margin-left: 2rem;
+}
+
+.btn-primary {
+    width: auto;
+    height: 2.5rem;
+    padding: 0 30px;
+    background-color: #395763;
+    font-family: 'Roboto', sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+
+/* home  section style //////////////////////////////////////////*/
+
+.home-section {
+    height: 100vh;
+    background: #f3f7fa url(../imgs/main_background.png) center no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.home-section-container {
+    margin: 5rem 7rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-h1 {
+    font-family: 'Futura Book';
+    font-size: 3.5rem;
+    margin: 5rem 1rem;
+}
+
+.main-logo-img {
+    max-width: 25rem;
+    max-height: 7rem;
+}
+
+/*about-us-section style //////////////////////////////////////////*/
+
+.about-us-section {
+    margin-top: 5rem;
+    background-color: #fff;
+    align-items: center;
+    position: relative;
+}
+
+.about-us-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+}
+
+.left-side-about-us-bg {
+    width: 70%;
+    height: 100%;
+    background-color: #f3f7fa;
+}
+
+.right-side-about-us-bg {
+    width: 40%;
+    height: 100%;
+}
+
+.about-us-container {
+    width: 75rem;
+    margin: 0 7rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.left-side-about-us-container {
+    width: 65%;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.indicators {
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px #cedfdf;
+    padding-bottom: 2.5rem;
+    margin-right: 2rem;
+}
+
+.indicators div {
+    font-family: 'Futura Bold';
+    /*font-weight: 700;*/
+    color: #000;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+.indicators span {
+    font-family: "Futura Light";
+    color: #555454;
+    font-size: 1rem;
+}
+
+.indicators sup,
+.company-slogan sup {
+    vertical-align: super;
+    font-size: .6rem;
+
+}
+
+.company-info-header {
+    font-family: "Futura Book";
+    font-size: 1.9rem;
+}
+
+.company-slogan {
+    margin: 5% 0;
+    padding-right: 12.5rem;
+    font-family: 'Futura Light';
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+}
+
+.company-info {
+    width: 35rem;
+    margin-top: 4rem;
+}
+
+.right-side-about-us-container {
+    width: 35%;
+    position: relative;
+    /*    z-index: 9;*/
+}
+
+.about-us-img {
+    width: 21rem;
+    height: 22rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.years-of-existence {
+    width: 21rem;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.small-number {
+    position: absolute;
+    top: 68%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-family: 'Futura Bold';
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.big-number {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-family: 'Futura Bold';
+    color: #f3f7fa;
+    font-size: 12.5rem;
+    font-weight: 700;
+}
+
+.caption-number {
+    position: absolute;
+    top: 75%;
+    left: 12%;
+    font-family: 'Futura Light';
+    color: #555;
+    font-size: 1.3rem;
+}
+
+.about-us-pattern {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 45.5rem;
+    height: 10rem;
+    background: url(../imgs/points_pattern.png) right repeat;
+    z-index: -1;
+}
+
+/*our-partner-section style ///////////////////////////////////*/
+
+.our-partner-section {
+    height: 45rem;
+    position: relative;
+}
+
+.our-partner-section-bg-h {
+    position: absolute;
+    width: 80%;
+    height: 8rem;
+    top: 21rem;
+    background: url(../imgs/points_pattern.png) repeat;
+    z-index: -1;
+}
+
+.our-partner-section-bg-v {
+    position: absolute;
+    width: 12%;
+    height: 40rem;
+    left: 82%;
+    top: 49%;
+    background: url(../imgs/points_pattern.png) repeat;
+    z-index: -2;
+}
+
+.our-partner-container {
+    font-family: 'Futura Book';
+    color: #fff;
+    font-size: .8rem;
+    line-height: 1.3rem;
+}
+
+.parner-cards-container {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+}
+
+.partner-card {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partner-card:nth-child(2) {
+    background-color: #6ba2b8;
+}
+
+.partner-card:nth-child(3) {
+    background-color: #537d8e;
+}
+
+.partner-card:nth-child(4) {
+    background-color: #395763;
+}
+
+.partner-card:nth-child(5) {
+    background-color: #203137;
+}
+
+.partner-img {
+    width: 100%;
+    height: 40%;
+}
+
+.partner-info {
+    width: auto;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    padding: 0 1rem;
+    font-family: 'Futura Book';
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.partner-info h3 {
+    margin: 1rem auto;
+    font-family: 'Futura Demi';
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.services-for-partner {
+    font-family: 'Futura Book';
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+/*Rodion styles //////////////////////////////////////////////////////////////////////////*/
+.our-offers-section {
+    background: url("../imgs/offers-section.png") bottom right no-repeat;
+    height: 53rem;
+    z-index: 1;
+    position: relative;
+    /*test size*/
+}
+
+.our-offers-directions {
+    width: 54rem;
+    background-color: #f3f7fa;
+    display: flex;
+    flex: 1 0 33%;
+    align-items: flex-start;
+    padding: 2rem;
+
+}
+
+.our-offers-direction {
+    border-right: 1px solid #b3dbd2;
+    margin-right: 1.25rem;
+}
+
+.our-offers-directions h3 {
+    font-size: 1.9rem;
+    font-family: 'Futura Demi';
+    line-height: 110%;
+    margin-bottom: 5rem;
+}
+
+.our-offers-directions p {
+    font-family: 'Futura Light';
+    line-height: 180%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+.our-offers-directions ul {
+    list-style-type: disc;
+    font-size: 1rem;
+    margin-left: .9375rem;
+    color: #686969;
+    line-height: 130%;
+    white-space: nowrap;
+    margin-bottom: 3.75rem;
+}
+
+.our-offers-directions li {
+    font-family: 'Futura Light';
+}
+
+.our-offers-directions a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-family: 'Futura Book';
+    padding: .1875rem .75rem;
+    background-color: #6ba2b8;
+}
+
+.advantages-gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.advantage-card {
+    width: 23.125rem;
+    margin: 3.1rem .9375rem;
+}
+
+.advantage-card h3 {
+    font-family: 'Futura Book';
+    width: 100%;
+    font-size: 1.625rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.advantage-card p {
+    font-family: "Futura Light";
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+/*slider content*/
+.partners-slider-images {
+    display: flex;
+    justify-content: space-between;
+    touch-action: none;
+}
+
+.left-img-slider {
+    flex: 1 1 58%;
+    position: relative;
+    margin-right: 1.5625rem;
+}
+
+.right-img-slider {
+    flex: 1 1 38%;
+    position: relative;
+}
+
+.left-img-slider-img,
+.right-img-slider-img {
+    max-width: 100%;
+    height: 29.0625rem;
+}
+
+.activeImg {
+    display: block;
+}
+
+/*Slider image captions*/
+.slider-caption {
+    position: absolute;
+    font-family: "Futura Book";
+    color: #fff;
+    bottom: 2.5rem;
+    left: 2.5rem;
+}
+
+.slider-caption h3 {
+    font-size: 2.5rem;
+}
+
+.slider-caption span {
+    font-size: 1.25rem;
+}
+
+.img-slider-navigator {
+    position: relative;
+}
+
+.numbers {
+    position: relative;
+}
+
+.img-slider-navigator-number {
+    font-size: .625rem;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: -5.3125rem;
+    right: 98px;
+    color: #9d9d9d;
+}
+
+.img-slider-navigator-number-01 {
+    bottom: -3.875rem;
+}
+
+.active-slider-number {
+    color: #000;
+}
+
+.prev,
+.next {
+    display: inline-block;
+    position: absolute;
+    bottom: -5.625rem;
+    right: 0;
+    margin-top: 1.25rem;
+    padding: 5px 8px;
+    border: 2px solid #9d9d9d;
+    color: #9d9d9d;
+    font-size: 1.875rem;
+    cursor: pointer;
+}
+
+.prev {
+    right: 46px;
+}
+
+.active-nav-button {
+    border: 2px solid #000;
+    color: #000;
+}
+
+/*End of images slider-content*/
+
+/*Feedback sliders*/
+.feedback-section {
+    background: url("../imgs/pattern-feedback.png");
+    max-height: 13.375rem;
+    margin-bottom: 18.75rem;
+    margin-top: 13.75rem;
+}
+
+.feedback-slider-content {
+    max-width: 45%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 2rem;
+
+}
+
+.feedback-slider-active {
+    display: block;
+}
+
+.feedback-slider p {
+    font-size: 1rem;
+    color: #6f6f6f;
+    line-height: 180%;
+    font-family: "Myriad Pro";
+}
+
+.feedback-slider-caption {
+    margin-top: 1.875rem;
+}
+
+.feedbacker-name {
+    display: inline-block;
+    font-family: 'Katherine Plus';
+    font-size: 1.75rem;
+    padding-left: 1.25rem;
+}
+
+.feedbacker-status {
+    font-family: "Myriad Pro";
+    font-size: 1.2rem;
+    padding-left: 1.25rem;
+    margin: .4375rem 0 0 5.3125rem;
+}
+
+.feedback-navagation-dots {
+    margin: 5rem auto;
+    width: 100px;
+}
+
+.dot {
+    margin: 0 3px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    width: .625rem;
+    height: .625rem;
+    background-color: black;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #d7dadb;
+}
+
+/*contacts section*/
+.contacts-section {
+    background-color: #f3f7fa;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts > div {
+    margin-top: 12.5rem;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.guest-input input {
+
+    width: 30rem;
+    height: 50px;
+    font-size: 17px;
+    margin: 5px auto 20px auto;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.guest-input textarea {
+    width: 30rem;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    margin: 5px 0 20px 0;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+}
+
+.guest-input input:focus,
+textarea:focus {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
+}
+
+.guest-input input[type='submit'] {
+    max-width: 260px;
+    height: 40px;
+    margin: 3.125rem 0 12.5rem 0;
+    padding: 0 30px;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+/*our contacts*/
+.contact-us {
+    font-family: "Futura Book";
+}
+
+.contact-us h3 {
+    font-size: 2.5rem;
+    margin: .9375rem 0 3rem 0;
+}
+
+.contact-us h4 {
+    font-size: 1.875rem;
+    line-height: 145%;
+    margin-bottom: 5rem;
+}
+
+.contact-us p {
+    font-size: 1.5rem;
+    line-height: 125%;
+    margin-bottom: 5rem;
+}
+
+.tg-logo-contact, .fb-logo-contact{
+    width: 3.7rem;
+    height: auto;
+}
+
+.contact-us img {
+    margin: 0 .9375rem 0 0;
+    cursor: pointer;
+}
+
+/*end of contact section*/
+
+footer {
+    background-color: #203137;
+    text-align: center;
+}
+
+.footer-logo {
+    padding: 3.125rem;
+}
+
+/*//////////////////////// SERVICES-DETAILS /////////////////////////////////////*/
+
+.tech-service-bg {
+    background: #f3f7fa url(../imgs/services-details/tech-service-background.jpg) center no-repeat;
+}
+
+.cleaning-service-bg {
+    background: #f3f7fa url(../imgs/services-details/cleaning-service-background.jpg) center no-repeat;
+}
+
+.other-services-bg {
+    background: #f3f7fa url(../imgs/services-details/other-services-background.jpg) center no-repeat;
+}
+
+.services-details-home-section {
+    min-height: 50vh;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-intro-section {
+    padding-top: 5rem;
+}
+.service-picture-piccontainer {
+    width:  41%;
+    margin-left: 4%;
+    overflow:hidden;
+    z-index:1;
+}
+
+.service-picture-piccontainer>img {
+    width:100%;
+}
+
+.service-intro-container {
+    width: 55.5%;
+    min-height: 70vh;
+    position: relative;
+    left: -0.5%;
+    padding: 4.31rem 7.9rem 4.31rem 5.75rem;
+    background-color: #f3f7fa;
+}
+
+.service-intro-text{
+    font-family: 'Futura Light';
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+}
+
+.service-full-description-section {
+    width: 67%;
+    max-width: 800px;
+    padding-bottom: 7.9rem;
+    padding-right: 2rem;
+    margin: auto;
+    position:relative;
+    font-family: 'Futura Light';
+    line-height: 1.5;
+    color: #555555;
+}
+
+.service-full-description-section:after {
+    content:"";
+    display:block;
+    width: 18%;
+    height: 110%;
+    position: absolute;
+    left:100%;
+    top: -5rem;
+    background: url(../imgs/points_pattern.png) center repeat;
+    z-index: -2;
+}
+
+.bold {
+    font-family: 'Futura Demi';
+}
+
+.list-with-markers{
+    list-style: disc inside;
+}
+/*////////////////// END OF SERVICES DETAILS //////////////////////////*/
+
+/*medias/////////////////////////////////////////////*/
+
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+
+    .section-title {
+        margin-left: 2rem;
+    }
+
+    .main-page-header {
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 40vh;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .small-container-header {
+        height: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .left-side-nav {
+        height: 70%;
+    }
+
+    .small-logo-img,
+    .nav-header-item,
+    .btn-primary,
+    .contact-tel {
+        margin: 0;
+    }
+    
+.home-h1 {
+    font-size: 3.3rem;
+  }
+    .about-us-container {
+        width: 75rem;
+        margin-left: 7rem;
+    }
+
+    .left-side-about-us-container {
+        margin-left: 0rem;
+    }
+
+    .indicators {
+        width: 25rem;
+    }
+
+    .our-partner-section {
+        height: auto;
+    }
+
+    .our-partner-section-bg-h {
+        width: 85%;
+        height: 11rem;
+        top: 33.2%;
+    }
+
+    .our-partner-section-bg-v {
+        width: 18%;
+        height: 65rem;
+        left: 66%;
+        top: 49%;
+    }
+
+    .parner-cards-container {
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+
+    .partner-card {
+        width: 33.4%;
+        height: auto;
+        margin: 1rem;
+
+    }
+
+    .partner-img {
+        height: 50%;
+    }
+
+    .partner-info {
+        height: 50%;
+        padding: 2rem 1rem;
+    }
+
+    .partner-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .services-for-partner {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .our-offers-section {
+        background: none;
+    }
+
+    .our-offers-directions {
+        width: 100%;
+        margin-top: 5rem;
+
+    }
+
+    .our-offers-directions h3 {
+        margin-bottom: 3.5rem;
+    }
+
+    .our-offers-directions p {
+        line-height: 1;
+    }
+
+    .our-offers-directions ul {
+        white-space: normal;
+    }
+
+    .contacts {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts > div {
+        margin-top: 1rem;
+    }
+
+    .contact-us {
+        text-align: center;
+    }
+
+    .contact-us p,
+    .contact-us h4 {
+        margin-bottom: 1rem;
+    }
+
+    .contact-us h3 {
+        margin-bottom: 1rem;
+    }
+
+    .guest-input input[type='submit'] {
+        margin: 0 auto 2rem auto;
+    }
+
+    .contact-us {
+        width: 30rem;
+        text-align: left;
+    }
+
+    .social-media-imgs {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .service-intro-container {
+       padding-right: 2.75rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .home-h1 {
+    font-size: 2.7rem;
+  }
+    .about-us-container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .about-us-bg {
+        display: none;
+    }
+
+    .left-side-about-us-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3f7fa;
+    }
+
+    .indicators {
+        width: 40rem;
+        margin: 0;
+    }
+
+    .indicators div {
+        margin-top: 2rem;
+    }
+
+    .indicators span {
+        display: block;
+        margin-top: 1rem;
+        /*        text-align: center;*/
+    }
+
+    .company-info {
+        width: 40rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .company-slogan {
+        padding-right: 0rem;
+        text-align: left;
+    }
+
+    .right-side-about-us-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-img {
+        position: relative;
+    }
+
+    .years-of-existence {
+        background-color: #fff;
+        position: relative;
+    }
+
+    .small-number {
+        left: 35%;
+    }
+
+    .big-number {
+        top: -6.4rem;
+        left: 8rem;
+    }
+
+    .caption-number {
+        top: 2rem;
+        left: 6rem;
+    }
+
+    .parner-cards-container {
+        flex-direction: column;
+    }
+
+    .our-partner-section-bg-h {
+        display: none;
+    }
+
+    .our-partner-section-bg-v {
+        width: 20%;
+        height: 100rem;
+        left: 72%;
+        top: 20%;
+    }
+
+    .partner-card {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .partner-img {
+        width: 60%;
+    }
+
+    .partner-info {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+
+    .our-offers-section {
+        height: auto;
+    }
+
+    .our-offers-directions {
+        flex-flow: row wrap;
+    }
+
+    .our-offers-direction,
+    .our-offers-direction-third {
+        flex: 1 50%;
+        border: none;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .our-offers-direction-third:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .our-offers-direction-third {
+        border-top: 1px solid #b3dbd2;
+    }
+
+    .our-offers-directions h3 {
+        margin-top: 2rem;
+    }
+
+    .our-offers-directions p {
+        font-size: 1.5rem;
+    }
+
+    .our-offers-directions ul {
+        font-size: 1.3rem;
+    }
+
+    .our-offers-direction a {
+        margin-bottom: 1rem;
+    }
+
+    .advantage-card {
+        display: flex;
+        flex-flow: wrap row;
+        padding: 10px;
+        align-self: baseline;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .advantage-card h3 {
+        display: block;
+        white-space: initial;
+    }
+
+
+    .right-img-slider {
+        display: none;
+    }
+
+    .left-img-slider {
+        margin: 0;
+    }
+
+    .left-img-slider-img {
+        height: auto;
+    }
+
+    .feedback-section {
+        /*background-size: 50%;*/
+    }
+
+    .feedback-slider-content {
+        max-width: 70%;
+        padding: 0 25px 0 25px;
+    }
+
+    .feedback-slider-content p {
+        font-size: 1.3rem;
+
+        line-height: 1.4;
+    }
+
+    .service-intro-container {
+        padding: 2.16rem 3.9rem 2.16rem 2.85rem;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 10px;
+    }
+
+    .main-page-header {
+        min-height: 30vh;
+    }
+
+    .home-section {
+        height: 50vh;
+    }
+
+    .home-section-container {
+        margin: 2rem 2rem 0;
+    }
+
+    .home-h1 {
+        font-family: 'Futura Book';
+        font-size: 2rem;
+        margin: 5rem 0 0 1rem;
+    }
+
+    .left-side-about-us-container {
+        padding: 0 2rem;
+
+    }
+
+    .indicators {
+        width: 100%;
+           justify-content: space-between;
+    }
+
+    .company-info {
+        width: auto;
+    }
+
+    .years-of-existence {
+        margin-left: -3rem;
+    }
+
+        .our-partner-section-bg-v {
+        left: 68%;
+
+    }
+    .partner-card {
+        margin-left: 0;
+    }
+
+    .partner-img {
+        width: 55%;
+    }
+
+    .partner-info {
+        padding: 0;
+    }
+
+
+    .our-offers-directions {
+        flex-flow: column;
+    }
+
+    .advantage-card {
+        width: 282px;
+        margin: 0 auto;
+    }
+
+    .left-img-slider,
+    .right-img-slider {
+        flex-basis: 100%;
+        flex-flow: column;
+    }
+    
+    .feedback-navagation-dots {
+   margin: 1rem auto;
+    }
+
+    .service-intro-section {
+    flex-wrap: wrap;
+    justify-content:center;
+    padding-top: 2rem;
+    }
+
+    .service-picture-piccontainer {
+        width:  55%;
+        min-height: 40px;
+        margin-left: 4%;
+        overflow:hidden;
+        transform: translate(-10vw);
+        z-index:1;
+    }
+    .service-intro-container {
+        width: 67%;
+        transform: translate(5vw, -10vh);
+        padding-top: 12vh;
+        padding-right: 2.85rem;
+        background-color: #f3f7fa;
+        text-align: justify;
+    }
+
+    .service-full-description-section{
+        width: 76%;
+        padding-right:0;
+        padding-left:3vw;
+    }
+
+    .service-full-description-section > .section-title {
+        margin-top: 2rem;
+        line-height:1;
+    }
+
+    .service-full-description-section > p {
+        text-align: justify;
+    }
+    .service-full-description-section:after {
+        display:none;
+    }
+
+}
+
+
+
