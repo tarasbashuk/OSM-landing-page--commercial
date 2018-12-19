@@ -598,7 +598,7 @@ body {
     margin: 0 auto;
     background-color: #fff;
     padding: 0 2rem;
-
+    touch-action: none;
 }
 
 .feedback-slider-active {

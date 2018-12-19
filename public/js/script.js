@@ -26,10 +26,11 @@ $('document').ready(function () {
         e.preventDefault();
         let currentIndex = $('.active-dot').index();
         $('.feedback-slider').eq(currentIndex).hide();
+        currentIndex = currentIndex === $('.dot').length - 1 ? -1 : $('.active-dot').index();
         $('.active-dot').removeClass('active-dot');
         $('.dot').eq(currentIndex + 1).addClass('active-dot');
         $('.feedback-slider').eq(currentIndex + 1).fadeIn(800);
-    })
+    });
     
 
     
