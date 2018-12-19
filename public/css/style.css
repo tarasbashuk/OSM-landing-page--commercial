@@ -57,7 +57,6 @@ body {
 
 /*Taras styles //////////////////////////////////////////////*/
 
-
 /*header style ///////////////////////////////////*/
 
 .main-page-header {
@@ -728,7 +727,7 @@ textarea:focus {
     margin-bottom: 5rem;
 }
 
-.tg-logo-contact, .fb-logo-contact{
+.tg-logo-contact, .fb-logo-contact {
     width: 3.7rem;
     height: auto;
 }
@@ -773,15 +772,16 @@ footer {
 .service-intro-section {
     padding-top: 5rem;
 }
+
 .service-picture-piccontainer {
-    width:  41%;
+    width: 41%;
     margin-left: 4%;
-    overflow:hidden;
-    z-index:1;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.service-picture-piccontainer>img {
-    width:100%;
+.service-picture-piccontainer > img {
+    width: 100%;
 }
 
 .service-intro-container {
@@ -793,7 +793,7 @@ footer {
     background-color: #f3f7fa;
 }
 
-.service-intro-text{
+.service-intro-text {
     font-family: 'Futura Light';
     color: #555;
     font-size: 1.2rem;
@@ -806,19 +806,19 @@ footer {
     padding-bottom: 7.9rem;
     padding-right: 2rem;
     margin: auto;
-    position:relative;
+    position: relative;
     font-family: 'Futura Light';
     line-height: 1.5;
     color: #555555;
 }
 
 .service-full-description-section:after {
-    content:"";
-    display:block;
+    content: "";
+    display: block;
     width: 18%;
     height: 110%;
     position: absolute;
-    left:100%;
+    left: 100%;
     top: -5rem;
     background: url(../imgs/points_pattern.png) center repeat;
     z-index: -2;
@@ -828,13 +828,13 @@ footer {
     font-family: 'Futura Demi';
 }
 
-.list-with-markers{
+.list-with-markers {
     list-style: disc inside;
 }
+
 /*////////////////// END OF SERVICES DETAILS //////////////////////////*/
 
 /*medias/////////////////////////////////////////////*/
-
 
 @media (max-width: 992px) {
     html {
@@ -870,10 +870,11 @@ footer {
     .contact-tel {
         margin: 0;
     }
-    
-.home-h1 {
-    font-size: 3.3rem;
-  }
+
+    .home-h1 {
+        font-size: 3.3rem;
+    }
+
     .about-us-container {
         width: 75rem;
         margin-left: 7rem;
@@ -994,8 +995,9 @@ footer {
         text-align: center;
         margin-bottom: 2rem;
     }
+
     .service-intro-container {
-       padding-right: 2.75rem;
+        padding-right: 2.75rem;
     }
 
 }
@@ -1006,8 +1008,9 @@ footer {
     }
 
     .home-h1 {
-    font-size: 2.7rem;
-  }
+        font-size: 2.7rem;
+    }
+
     .about-us-container {
         width: 100%;
         flex-direction: column;
@@ -1116,7 +1119,6 @@ footer {
         align-items: center;
     }
 
-
     .our-offers-section {
         height: auto;
     }
@@ -1173,7 +1175,6 @@ footer {
         white-space: initial;
     }
 
-
     .right-img-slider {
         display: none;
     }
@@ -1204,7 +1205,6 @@ footer {
     .service-intro-container {
         padding: 2.16rem 3.9rem 2.16rem 2.85rem;
     }
-
 
 }
 
@@ -1237,8 +1237,8 @@ footer {
     }
 
     .indicators {
-        width: 100%;
-           justify-content: space-between;
+        max-width: 100%;
+        justify-content: space-evenly;
     }
 
     .company-info {
@@ -1249,10 +1249,11 @@ footer {
         margin-left: -3rem;
     }
 
-        .our-partner-section-bg-v {
+    .our-partner-section-bg-v {
         left: 68%;
 
     }
+
     .partner-card {
         margin-left: 0;
     }
@@ -1264,7 +1265,6 @@ footer {
     .partner-info {
         padding: 0;
     }
-
 
     .our-offers-directions {
         flex-flow: column;
@@ -1280,25 +1280,26 @@ footer {
         flex-basis: 100%;
         flex-flow: column;
     }
-    
+
     .feedback-navagation-dots {
-   margin: 1rem auto;
+        margin: 1rem auto;
     }
 
     .service-intro-section {
-    flex-wrap: wrap;
-    justify-content:center;
-    padding-top: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 2rem;
     }
 
     .service-picture-piccontainer {
-        width:  55%;
+        width: 55%;
         min-height: 40px;
         margin-left: 4%;
-        overflow:hidden;
+        overflow: hidden;
         transform: translate(-10vw);
-        z-index:1;
+        z-index: 1;
     }
+
     .service-intro-container {
         width: 67%;
         transform: translate(5vw, -10vh);
@@ -1308,22 +1309,23 @@ footer {
         text-align: justify;
     }
 
-    .service-full-description-section{
+    .service-full-description-section {
         width: 76%;
-        padding-right:0;
-        padding-left:3vw;
+        padding-right: 0;
+        padding-left: 3vw;
     }
 
     .service-full-description-section > .section-title {
         margin-top: 2rem;
-        line-height:1;
+        line-height: 1;
     }
 
     .service-full-description-section > p {
         text-align: justify;
     }
+
     .service-full-description-section:after {
-        display:none;
+        display: none;
     }
 
 }
