@@ -13,8 +13,28 @@ $('document').ready(function () {
         $(this).addClass('active-dot')
     });
 
+    $('.feedback-slider').on('swipeleft', function (e) {
+        e.preventDefault();
+        let currentIndex = $('.active-dot').index();
+        $('.feedback-slider').eq(currentIndex).hide();
+        $('.active-dot').removeClass('active-dot');
+        $('.dot').eq(currentIndex - 1).addClass('active-dot');
+        $('.feedback-slider').eq(currentIndex - 1).fadeIn(800);
+    });
 
+    $('.feedback-slider').on('swiperight', function (e) {
+        e.preventDefault();
+        let currentIndex = $('.active-dot').index();
+        $('.feedback-slider').eq(currentIndex).hide();
+        $('.active-dot').removeClass('active-dot');
+        $('.dot').eq(currentIndex + 1).addClass('active-dot');
+        $('.feedback-slider').eq(currentIndex + 1).fadeIn(800);
+    })
+    
 
+    
+
+    // images slider
     $('.partners-slider-images:not(:first)').hide();
 
     $('.partners-slider-images').on('swipeleft', function (e) {
