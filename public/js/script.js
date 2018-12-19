@@ -111,6 +111,33 @@ $('document').ready(function () {
         $('[name="firstname"]').focus();
 
     });
+
+    $('#aboutUsLink').click(function () {
+
+        $('body,html').animate({
+            scrollTop: $("#about-us").offset().top
+        }, 800);
+        $('[name="firstname"]').focus();
+
+    });
+
+    $('#toClientsLink').click(function () {
+
+        $('body,html').animate({
+            scrollTop: $("#clients-review").offset().top
+        }, 800);
+        $('[name="firstname"]').focus();
+
+    });
+
+    $('#toContactsLink').click(function () {
+
+        $('body,html').animate({
+            scrollTop: $("#contacts").offset().top
+        }, 800);
+        $('[name="firstname"]').focus();
+
+    });
 });
 
 

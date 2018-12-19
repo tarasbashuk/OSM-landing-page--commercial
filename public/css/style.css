@@ -46,6 +46,7 @@ body {
     font-size: 3.75rem;
     font-family: 'Futura Book';
     margin: 5rem 0 4.25rem 0;
+    line-height: 1;
 }
 
 /*end of common content*/
@@ -587,7 +588,7 @@ body {
 /*Feedback sliders*/
 .feedback-section {
     background: url("../imgs/pattern-feedback.png");
-    max-height: 13.375rem;
+    max-height: 12rem;
     margin-bottom: 18.75rem;
     margin-top: 13.75rem;
 }
@@ -715,7 +716,7 @@ textarea:focus {
     margin: .9375rem 0 3rem 0;
 }
 
-.contact-us h4 {
+.contact-us div {
     font-size: 1.875rem;
     line-height: 145%;
     margin-bottom: 5rem;
@@ -1280,6 +1281,9 @@ footer {
         flex-basis: 100%;
         flex-flow: column;
     }
+    .feedback-slider-content {
+        max-width: 86%;
+    }
 
     .feedback-navagation-dots {
         margin: 1rem auto;
@@ -1327,8 +1331,8 @@ footer {
     .service-full-description-section:after {
         display: none;
     }
-
 }
+
 
 
 
