@@ -47,7 +47,7 @@ $('document').ready(function () {
             $('.nav-button').eq(currentIndex - 1).addClass('active-nav-button');
             $('.active-slider-number').removeClass('active-slider-number');
             $('.img-slider-navigator-number').eq(currentIndex - 1).addClass('active-slider-number');
-            $('.partners-slider-images').eq(currentIndex - 1).fadeIn(800);
+            $('.partners-slider-images').eq(currentIndex - 1).show('slide',{ direction: 'right'}, 500);
         }});
 
     $('.partners-slider-images').on('swiperight', function (e) {
@@ -59,7 +59,7 @@ $('document').ready(function () {
             $('.nav-button').eq(currentIndex - 1).addClass('active-nav-button');
             $('.active-slider-number').removeClass('active-slider-number');
             $('.img-slider-navigator-number').eq(currentIndex - 1).addClass('active-slider-number');
-            $('.partners-slider-images').eq(currentIndex - 1).fadeIn(800);
+            $('.partners-slider-images').eq(currentIndex - 1).show('slide',{ direction: 'left'}, 500);
         }});
 
 
