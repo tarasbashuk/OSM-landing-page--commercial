@@ -85,10 +85,15 @@ body {
     margin-left: 1rem;
 }
 
+.nav-header-burger {
+    display: none;
+}
+
 .small-logo-img {
     max-width: 55px;
     max-height: 6vh;
     margin-right: 2.5rem;
+    cursor: pointer;
 }
 
 .nav-header-item a:active,
@@ -728,7 +733,8 @@ textarea:focus {
     margin-bottom: 5rem;
 }
 
-.tg-logo-contact, .fb-logo-contact {
+.tg-logo-contact,
+.fb-logo-contact {
     width: 3.7rem;
     height: auto;
 }
@@ -846,30 +852,28 @@ footer {
         margin-left: 2rem;
     }
 
-    .main-page-header {
-        flex-direction: column;
-        justify-content: space-around;
-        min-height: 40vh;
-        position: relative;
-        background-color: #fff;
+ .main-page-header {
+        padding: 0 1rem;
     }
 
     .small-container-header {
+        /*
         height: 30%;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+*/
     }
 
     .left-side-nav {
-        height: 70%;
+        /*        height: 70%;*/
     }
 
     .small-logo-img,
     .nav-header-item,
     .btn-primary,
     .contact-tel {
-        margin: 0;
+        margin: .5rem;
     }
 
     .home-h1 {
@@ -1008,9 +1012,25 @@ footer {
         font-size: 12px;
     }
 
+    .main-page-header {
+        padding: 0 .5rem;
+    }
+
+    .small-logo-img,
+    .nav-header-item,
+    .btn-primary,
+    .contact-tel {
+        margin: 0.35rem;
+    }
+
+    .btn-primary {
+        padding: 0 10px;
+    }
+
     .home-h1 {
         font-size: 2.7rem;
     }
+
 
     .about-us-container {
         width: 100%;
@@ -1214,8 +1234,57 @@ footer {
         font-size: 10px;
     }
 
+    
     .main-page-header {
-        min-height: 30vh;
+     padding: 0 2rem;
+    }
+
+
+    .nav-header-item {
+        display: none;
+    }
+
+    .nav-header-burger {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: #000;
+    }
+
+    .nav-header-burger-container {
+        padding: 5rem 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .burger-logo-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-header-burger-item {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .nav-header-burger-item a:active,
+    .nav-header-burger-item a:visited,
+    .nav-header-burger-item a:link {
+        color: #fff;
+    }
+
+    .burger-logos-container {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .home-section {
@@ -1281,6 +1350,7 @@ footer {
         flex-basis: 100%;
         flex-flow: column;
     }
+
     .feedback-slider-content {
         max-width: 86%;
     }
@@ -1332,7 +1402,3 @@ footer {
         display: none;
     }
 }
-
-
-
-
