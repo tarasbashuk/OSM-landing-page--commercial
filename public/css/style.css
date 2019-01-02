@@ -1385,13 +1385,11 @@ footer {
         min-height: 40px;
         margin-left: 4%;
         overflow: hidden;
-        transform: translate(-10vw);
         z-index: 1;
     }
 
     .service-intro-container {
         width: 67%;
-        transform: translate(5vw, -10vh);
         padding-top: 12vh;
         padding-right: 2.85rem;
         background-color: #f3f7fa;
