@@ -124,7 +124,7 @@ $('document').ready(function () {
 
     $('.nav-header-burger').hide();
 
-    $('#toTop').click(function (evt) {
+    $('#burgerBtn').click(function (evt) {
         if ($('body').outerWidth() < 576) {
             evt.preventDefault();
             $('.nav-header-burger').toggle("slide", 500);
