@@ -140,7 +140,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     });
 
 
-    $(document).click(function (evt) {
+    $(document).on('click touchstart', function (evt) {
         let container = $(".nav-header-burger"),
             container2 = $(".left-side-nav");
         if (container.has(evt.target).length === 1) {
