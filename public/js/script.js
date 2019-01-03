@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 $('document').ready(function () {
 
     //    let widthDoc = $('body').outerWidth();
@@ -10,7 +11,7 @@ $('document').ready(function () {
         $('.active-dot').removeClass('active-dot');
         $('.feedback-slider').eq(wasActive).hide();
         $('.feedback-slider').eq($(this).index()).fadeIn(1500);
-        $(this).addClass('active-dot')
+        $(this).addClass('active-dot');
     });
 
     $('.feedback-slider').on('swipeleft', function (e) {
@@ -108,7 +109,7 @@ $('document').ready(function () {
 
 
 ///линк для звонка
-    
+
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   document.getElementById("header-phone").innerHTML = '<a class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </a>';
