@@ -608,26 +608,25 @@ body {
 }
 
 .feedback-slider-content {
-    max-width: 45%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 0 2rem;
-    touch-action: none;
+        width: 46%;
+        margin: 0 auto;
+        background-color: #fff;
+        margin-bottom: 10rem;
 }
 
-.feedback-slider-active {
-    display: block;
-}
+
 
 .feedback-slider p {
     font-size: 1rem;
     color: #6f6f6f;
     line-height: 180%;
     font-family: "Myriad Pro";
+    padding: 0 25px;
+    cursor: pointer;
 }
 
 .feedback-slider-caption {
-    margin-top: 1.875rem;
+    margin: 1.875rem 0 0 2rem;
 }
 
 .feedbacker-name {
@@ -641,10 +640,15 @@ body {
     font-family: "Myriad Pro";
     font-size: 1.2rem;
     padding-left: 1.25rem;
-    margin: .4375rem 0 0 5.3125rem;
+    margin: .4375rem 0 4rem 5.3125rem;
 }
-
-.feedback-navagation-dots {
+.swiper-pagination-bullet{
+    background: black;
+}
+/* .swiper-pagination.swiper-pagination-bullets{
+    margin-top: 55rem;
+} */
+/* .feedback-navagation-dots {
     margin: 5rem auto;
     width: 100px;
 }
@@ -662,7 +666,7 @@ body {
 
 .active-dot {
     background-color: #d7dadb;
-}
+} */
 
 /*contacts section*/
 .contacts-section {
@@ -1227,18 +1231,16 @@ footer {
         height: auto;
     }
 
-    .feedback-section {
-        /*background-size: 50%;*/
-    }
+
 
     .feedback-slider-content {
-        max-width: 70%;
+        width: 70%;
         padding: 0;
     }
 
     .feedback-slider-content p {
         font-size: 1.3rem;
-
+        width: 100%;
         line-height: 1.4;
     }
 
@@ -1378,7 +1380,8 @@ footer {
     }
 
     .feedback-slider-content {
-        max-width: 86%;
+        width: 86%;
+        margin-bottom: 25rem;
     }
 
     .feedback-navagation-dots {
@@ -1439,5 +1442,12 @@ footer {
     .contact-us{
         width: 25rem;
         padding: 12px;
+    }
+}
+@media (max-width: 300px){
+    .feedback-slider-content{
+        padding: 10px;
+        width: 100%;
+        line-height: 1.1;
     }
 }
