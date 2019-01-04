@@ -1395,16 +1395,14 @@ footer {
     }
 
     .service-picture-piccontainer {
-        width: 55%;
-        min-height: 40px;
-        margin-left: 4%;
+        width: 67%;
+        margin-left: 0;
         overflow: hidden;
-        z-index: 1;
     }
 
     .service-intro-container {
         width: 67%;
-        padding-top: 12vh;
+        padding-top: 6vh;
         padding-right: 2.85rem;
         background-color: #f3f7fa;
         text-align: justify;
