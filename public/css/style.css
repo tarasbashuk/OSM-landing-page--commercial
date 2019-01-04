@@ -132,6 +132,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     border: 0;
+    border-radius: 1px;
     cursor: pointer;
 }
 
@@ -415,7 +416,7 @@ body {
 
 /*Rodion styles //////////////////////////////////////////////////////////////////////////*/
 .our-offers-section {
-    background: url("../imgs/offers-section.png") bottom right no-repeat;
+    background: url("../imgs/offers-section-an.jpg") bottom right no-repeat;
     height: 53rem;
     z-index: 1;
     position: relative;
@@ -607,26 +608,25 @@ body {
 }
 
 .feedback-slider-content {
-    max-width: 45%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 0 2rem;
-    touch-action: none;
+        width: 46%;
+        margin: 0 auto;
+        background-color: #fff;
+        margin-bottom: 10rem;
 }
 
-.feedback-slider-active {
-    display: block;
-}
+
 
 .feedback-slider p {
     font-size: 1rem;
     color: #6f6f6f;
     line-height: 180%;
     font-family: "Myriad Pro";
+    padding: 0 25px;
+    cursor: pointer;
 }
 
 .feedback-slider-caption {
-    margin-top: 1.875rem;
+    margin: 1.875rem 0 0 2rem;
 }
 
 .feedbacker-name {
@@ -640,10 +640,15 @@ body {
     font-family: "Myriad Pro";
     font-size: 1.2rem;
     padding-left: 1.25rem;
-    margin: .4375rem 0 0 5.3125rem;
+    margin: .4375rem 0 4rem 5.3125rem;
 }
-
-.feedback-navagation-dots {
+.swiper-pagination-bullet{
+    background: black;
+}
+/* .swiper-pagination.swiper-pagination-bullets{
+    margin-top: 55rem;
+} */
+/* .feedback-navagation-dots {
     margin: 5rem auto;
     width: 100px;
 }
@@ -661,7 +666,7 @@ body {
 
 .active-dot {
     background-color: #d7dadb;
-}
+} */
 
 /*contacts section*/
 .contacts-section {
@@ -671,24 +676,33 @@ body {
 .contacts {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
-.contacts > div {
-    margin-top: 12.5rem;
+.contact-us , form {
+    margin-top: 8rem;
 }
 
 form {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
-
+.guest-input label{
+    font-size: 1.1rem;
+    padding-bottom: 7px;
+}
 .guest-input input {
 
     width: 30rem;
     height: 50px;
-    font-size: 17px;
+    font-size: 1.1rem;
     margin: 5px auto 20px auto;
     border: none;
+    border-radius: 1px;
     outline: none;
     padding: 10px;
 }
@@ -697,7 +711,7 @@ form {
     width: 30rem;
     height: 100px;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 1.1rem;
     margin: 5px 0 20px 0;
     border: none;
     outline: none;
@@ -713,9 +727,10 @@ textarea:focus {
 .guest-input input[type='submit'] {
     max-width: 260px;
     height: 40px;
-    margin: 3.125rem 0 12.5rem 0;
+    margin: 2.85rem 0 12.5rem 0;
     padding: 0 30px;
     font-size: .875rem;
+    border-radius: 1px;
     font-weight: 700;
 }
 
@@ -1216,18 +1231,16 @@ footer {
         height: auto;
     }
 
-    .feedback-section {
-        /*background-size: 50%;*/
-    }
+
 
     .feedback-slider-content {
-        max-width: 70%;
+        width: 70%;
         padding: 0;
     }
 
     .feedback-slider-content p {
         font-size: 1.3rem;
-
+        width: 100%;
         line-height: 1.4;
     }
 
@@ -1242,7 +1255,7 @@ footer {
         font-size: 10px;
     }
 
-    
+
     .main-page-header {
      padding: 0 2rem;
     }
@@ -1291,7 +1304,7 @@ footer {
     .nav-header-burger-item a:link {
         color: #fff;
     }
-    
+
     .nav-header-burger-item a:hover {
     border-bottom: 2px solid #fff;
 }
@@ -1367,7 +1380,8 @@ footer {
     }
 
     .feedback-slider-content {
-        max-width: 86%;
+        width: 86%;
+        margin-bottom: 25rem;
     }
 
     .feedback-navagation-dots {
@@ -1414,5 +1428,24 @@ footer {
     .service-full-description-section:after {
         display: none;
     }
+    .contacts{
+        padding: 0;
+    }
+    form{
+        width: 25rem;
+    }
+    .guest-input input, .guest-input label, .guest-input textarea{
+        width: 25rem;
+    }
+    .contact-us{
+        width: 25rem;
+        padding: 12px;
+    }
 }
-
+@media (max-width: 300px){
+    .feedback-slider-content{
+        padding: 10px;
+        width: 100%;
+        line-height: 1.1;
+    }
+}
