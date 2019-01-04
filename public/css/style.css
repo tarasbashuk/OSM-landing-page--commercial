@@ -49,6 +49,10 @@ body {
     line-height: 1;
 }
 
+.piccontainer > img {
+    width: 100%;
+}
+
 /*end of common content*/
 
 .section {
@@ -806,12 +810,7 @@ footer {
 .service-picture-piccontainer {
     width: 41%;
     margin-left: 4%;
-    overflow: hidden;
     z-index: 1;
-}
-
-.service-picture-piccontainer > img {
-    width: 100%;
 }
 
 .service-intro-container {
@@ -833,7 +832,7 @@ footer {
 .service-full-description-section {
     width: 67%;
     max-width: 800px;
-    padding-bottom: 7.9rem;
+    padding-bottom: 5rem;
     padding-right: 2rem;
     margin: auto;
     position: relative;
@@ -853,6 +852,40 @@ footer {
     background: url(../imgs/points_pattern.png) center repeat;
     z-index: -2;
 }
+
+.service-full-descr-bg-icon {
+    position: absolute;
+    z-index: -1;
+
+}
+
+.bg-pipe-piccontainer {
+    width: 48%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 11.5rem;
+}
+
+.bg-vacuum-piccontainer {
+    width: 45%;
+    left: -23%;
+    top: -25%;
+}
+
+.bg-portfolio-piccontainer {
+    width: 33%;
+    left: 45%;
+    top: 12rem;
+}
+
+.OSM-picture-piccontainer {
+    width: 47%;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    z-index: -1;
+}
+
 
 .bold {
     font-family: 'Futura Demi';
@@ -1027,6 +1060,11 @@ footer {
     .service-intro-container {
         padding-right: 2.75rem;
     }
+
+    .bg-vacuum-piccontainer {
+        left: -18%;
+    }
+
 
 }
 
@@ -1248,6 +1286,14 @@ footer {
         padding: 2.16rem 3.9rem 2.16rem 2.85rem;
     }
 
+    .bg-vacuum-piccontainer {
+        top: -10%;
+    }
+
+    .bg-portfolio-piccontainer {
+        top: 25rem;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -1397,7 +1443,6 @@ footer {
     .service-picture-piccontainer {
         width: 67%;
         margin-left: 0;
-        overflow: hidden;
     }
 
     .service-intro-container {
@@ -1426,6 +1471,20 @@ footer {
     .service-full-description-section:after {
         display: none;
     }
+
+    .service-full-descr-bg-icon {
+        width: 65%;
+        left: 50%;
+        transform: translate(-50%);
+        top: 25rem;
+    }
+
+    .OSM-picture-piccontainer {
+        width: 90%;
+        right: 50%;
+        transform: translate(50%);
+    }
+
     .contacts{
         padding: 0;
     }
