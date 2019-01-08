@@ -217,24 +217,38 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         $('.nav-header-burger').toggle("slide", 500);
 
     });
+    
+    //E-mail Ajax Send
+
+    $("form").submit(function () {
+
+        var th = $(this);
+
+        $.ajax({
+
+            type: "POST",
+
+            url: "//ro_lozovoi.gitlab.io/osm-llc-commercial/mail.php", //Change!!!
+
+            data: th.serialize()
+
+        }).done(function () {
+
+            alert("Message send!");
+
+            setTimeout(function () {
+
+                // Done Functions
+
+                th.trigger("reset");
+
+            }, 1000);
+
+        });
+
+        return false;
+
+    });
+
 });
 
-
-
-
-//
-//    $(".button").click(function() {
-//var data = {
-//    name: $("#form_name").val(),
-//    email: $("#form_email").val(),
-//    message: $("#msg_text").val()
-//};
-//$.ajax({
-//    type: "POST",
-//    url: "//tarbas.gitlab.io/osm-lp-v.1.2/email.php",
-//    data: data,
-//    success: function(){
-//        $('.success').fadeIn(1000);
-//    }
-//});
-//    });
