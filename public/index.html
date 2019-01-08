@@ -353,17 +353,23 @@
     <section class="contacts-section">
         <div class="container contacts" id="contacts">
             <div class="guest-input">
-                <form action="">
-                    <label for="">Имя</label>
-                    <input type="text" name="firstname">
-                    <label for="">Номер телефона</label>
-                    <input type="text" name="phonenumber" placeholder="+38..."> <br>
-                    <label for="">E-mail</label>
-                    <input type="text" name="email" placeholder="name@mail.com">
-                    <label for="">Чем мы можем вам помочь?</label>
-                    <textarea name="comment" placeholder="Ваше сообщение"></textarea>
-                    <input type="submit" value="заказать обратную связь" class="btn-primary">
-
+                <form action="" id="contact-form">
+                    Имя <br>        
+                    <input type="hidden" name="project_name" value="website form full">
+                <!--                 Change!-->
+                <input type="hidden" name="admin_email" value="bashuk.taras@gmail.com">
+                <input type="hidden" name="form_subject" value="website form full">
+                   
+                    <input type="text" name="name" id="name"> <br>
+                    Номер телефона <br>
+                    <input type="tel" name="website" id="website" placeholder="+38..."> <br>
+                    E-mail <br>
+                    <input type="text" name="mail" id="mail" placeholder="name@mail.com"> <br>
+                    Чем мы можем вам помочь? <br>
+                    <textarea name="comment" id="comment" placeholder="Ваше сообщение"></textarea> <br>
+                    <input type="submit" value="заказать обратную связь" class="btn-primary" id="submit_contact">
+                    <div id="msg" class="message"></div>
+<!--                    я так понимаю тут пишется сообщения в случае успешной отправки-->        
                 </form>
             </div>
             <div class="contact-us">
