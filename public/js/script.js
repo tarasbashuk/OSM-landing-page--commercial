@@ -1,38 +1,44 @@
+/*jshint esversion: 6 */
 $('document').ready(function () {
 
     //    let widthDoc = $('body').outerWidth();
 
 
     // dot navigation slider
-    $('.feedback-slider:not(:first)').hide();
-    $('.dot').click(function () {
-        let wasActive = $('.active-dot').index();
-        $('.active-dot').removeClass('active-dot');
-        $('.feedback-slider').eq(wasActive).hide();
-        $('.feedback-slider').eq($(this).index()).fadeIn(1500);
-        $(this).addClass('active-dot')
+    // $('.feedback-slider:not(:first)').hide();
+    // $('.dot').click(function () {
+    //     let wasActive = $('.active-dot').index();
+    //     $('.active-dot').removeClass('active-dot');
+    //     $('.feedback-slider').eq(wasActive).hide();
+    //     $('.feedback-slider').eq($(this).index()).fadeIn(1500);
+    //     $(this).addClass('active-dot');
+    // });
+
+    // $('.feedback-slider').on('swipeleft', function (e) {
+    //     e.preventDefault();
+    //     let currentIndex = $('.active-dot').index();
+    //     $('.feedback-slider').eq(currentIndex).hide();
+    //     $('.active-dot').removeClass('active-dot');
+    //     $('.dot').eq(currentIndex - 1).addClass('active-dot');
+    //     $('.feedback-slider').eq(currentIndex - 1).fadeIn(800);
+    // });
+    //
+    // $('.feedback-slider').on('swiperight', function (e) {
+    //     e.preventDefault();
+    //     let currentIndex = $('.active-dot').index();
+    //     $('.feedback-slider').eq(currentIndex).hide();
+    //     currentIndex = currentIndex === $('.dot').length - 1 ? -1 : $('.active-dot').index();
+    //     $('.active-dot').removeClass('active-dot');
+    //     $('.dot').eq(currentIndex + 1).addClass('active-dot');
+    //     $('.feedback-slider').eq(currentIndex + 1).fadeIn(800);
+    // });
+
+// свайпер для отзывов
+    let swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
     });
-
-    $('.feedback-slider').on('swipeleft', function (e) {
-        e.preventDefault();
-        let currentIndex = $('.active-dot').index();
-        $('.feedback-slider').eq(currentIndex).hide();
-        $('.active-dot').removeClass('active-dot');
-        $('.dot').eq(currentIndex - 1).addClass('active-dot');
-        $('.feedback-slider').eq(currentIndex - 1).fadeIn(800);
-    });
-
-    $('.feedback-slider').on('swiperight', function (e) {
-        e.preventDefault();
-        let currentIndex = $('.active-dot').index();
-        $('.feedback-slider').eq(currentIndex).hide();
-        currentIndex = currentIndex === $('.dot').length - 1 ? -1 : $('.active-dot').index();
-        $('.active-dot').removeClass('active-dot');
-        $('.dot').eq(currentIndex + 1).addClass('active-dot');
-        $('.feedback-slider').eq(currentIndex + 1).fadeIn(800);
-    });
-
-
 
 
     // images slider
@@ -40,14 +46,14 @@ $('document').ready(function () {
 
     $('.partners-slider-images').on('swipeleft', function (e) {
         if ($('body').outerWidth() < 768) {
-            e.preventDefault();
+            e.stopPropagation();
             let currentIndex = $('.active-nav-button').index();
-            $('.partners-slider-images').eq(currentIndex).hide();
+            $('.partners-slider-images').eq(currentIndex).hide(500);
             $('.active-nav-button').removeClass('active-nav-button');
             $('.nav-button').eq(currentIndex - 1).addClass('active-nav-button');
             $('.active-slider-number').removeClass('active-slider-number');
             $('.img-slider-navigator-number').eq(currentIndex - 1).addClass('active-slider-number');
-            $('.partners-slider-images').eq(currentIndex - 1).show('slide', {
+            $('.partners-slider-images').eq(currentIndex - 1).stop().show('slide', {
                 direction: 'right'
             }, 500);
         }
@@ -55,14 +61,14 @@ $('document').ready(function () {
 
     $('.partners-slider-images').on('swiperight', function (e) {
         if ($('body').outerWidth() < 768) {
-            e.preventDefault();
+            e.stopPropagation();
             let currentIndex = $('.active-nav-button').index();
-            $('.partners-slider-images').eq(currentIndex).hide();
+            $('.partners-slider-images').eq(currentIndex).hide(500);
             $('.active-nav-button').removeClass('active-nav-button');
             $('.nav-button').eq(currentIndex - 1).addClass('active-nav-button');
             $('.active-slider-number').removeClass('active-slider-number');
             $('.img-slider-navigator-number').eq(currentIndex - 1).addClass('active-slider-number');
-            $('.partners-slider-images').eq(currentIndex - 1).show('slide', {
+            $('.partners-slider-images').eq(currentIndex - 1).stop().show('slide', {
                 direction: 'left'
             }, 500);
         }
@@ -81,7 +87,7 @@ $('document').ready(function () {
         $('.nav-button').eq(currentIndex - 1).addClass('active-nav-button');
         $('.active-slider-number').removeClass('active-slider-number');
         $('.img-slider-navigator-number').eq(currentIndex - 1).addClass('active-slider-number');
-        $('.partners-slider-images').eq(currentIndex - 1).fadeIn(1500);
+        $('.partners-slider-images').eq(currentIndex - 1).fadeIn(700);
     }
 
     function nextSlide() {
@@ -92,7 +98,7 @@ $('document').ready(function () {
         $('.nav-button').eq(currentIndex + 1).addClass('active-nav-button');
         $('.active-slider-number').removeClass('active-slider-number');
         $('.img-slider-navigator-number').eq(currentIndex + 1).addClass('active-slider-number');
-        $('.partners-slider-images').eq(currentIndex + 1).fadeIn(1500);
+        $('.partners-slider-images').eq(currentIndex + 1).fadeIn(700);
     }
 
 
@@ -108,7 +114,7 @@ $('document').ready(function () {
 
 
 ///линк для звонка
-    
+
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   document.getElementById("header-phone").innerHTML = '<a class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </a>';
