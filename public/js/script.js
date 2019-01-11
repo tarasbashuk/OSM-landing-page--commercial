@@ -139,7 +139,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     // бургер
 
 
-//    $('.nav-header-burger').hide();
+    $('.nav-header-burger').hide();
 
     $('#burgerBtn').click(function (evt) {
         if ($('body').outerWidth() < 576) {
@@ -163,13 +163,23 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         } else if (container2.has(evt.target).length === 1) {
             return;
         } else {
-            evt.stopImmediatePropagation();
-            evt.preventDefault();   
             $('.nav-header-burger').toggle("slide", 500);
         }
     });
 
-
+ $(document).on('click', function (evt) {
+        let container = $(".nav-header-burger"),
+            container2 = $(".left-side-nav");
+        if (container.has(evt.target).length === 1) {
+            return;
+        } else if ($('.nav-header-burger').is(':hidden')) {
+            return;
+        } else if (container2.has(evt.target).length === 1) {
+            return;
+        } else {
+            $('.nav-header-burger').toggle("slide", 500);
+        }
+    });
     //скролл для кнопок в меню
 
     $('#toContacts').click(function () {
