@@ -36,11 +36,11 @@ $('document').ready(function () {
     //     $('.feedback-slider').eq(currentIndex + 1).fadeIn(800);
     // });
 
-// свайпер для отзывов
+    // свайпер для отзывов
     let swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
+        pagination: {
+            el: '.swiper-pagination',
+        },
     });
 
 
@@ -116,14 +116,14 @@ $('document').ready(function () {
     });
 
 
-///линк для звонка
+    ///линк для звонка
 
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  document.getElementById("header-phone").innerHTML = '<a class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </a>';
- } else	{
-  document.getElementById("header-phone").innerHTML = '<span class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </span>';
-}
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        document.getElementById("header-phone").innerHTML = '<a class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </a>';
+    } else {
+        document.getElementById("header-phone").innerHTML = '<span class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </span>';
+    }
 
     // бэкграунд для хедера
     $(function () {
@@ -138,51 +138,52 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
     // бургер
 
-
+    $('.nav-header-burger').css('display', 'flex');
     $('.nav-header-burger').hide();
+//    $('.nav-header-burger').css('width', '50vw');
+ 
 
     $('#burgerBtn').click(function (evt) {
         if ($('body').outerWidth() < 576) {
             evt.preventDefault();
-//            $('.nav-header-burger').css('display', 'flex');
+            //            $('.nav-header-burger').css('display', 'flex');
             $('.nav-header-burger').toggle("slide", 500);
-            evt.stopImmediatePropagation();
-//            $('.nav-header-burger').css('width', '50vw');
-//            $('.nav-header-burger').css('display', 'flex');
+//            evt.stopImmediatePropagation();
+
         }
     });
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  $(document).on('touchstart', function (evt) {
-        let container = $(".nav-header-burger"),
-            container2 = $(".left-side-nav");
-        if (container.has(evt.target).length === 1) {
-            return;
-        } else if ($('.nav-header-burger').is(':hidden')) {
-            return;
-        } else if (container2.has(evt.target).length === 1) {
-            return;
-        } else {
-            $('.nav-header-burger').toggle("slide", 500);
-        }
-    });
- } else	{
-  
- $(document).on('click', function (evt) {
-        let container = $(".nav-header-burger"),
-            container2 = $(".left-side-nav");
-        if (container.has(evt.target).length === 1) {
-            return;
-        } else if ($('.nav-header-burger').is(':hidden')) {
-            return;
-        } else if (container2.has(evt.target).length === 1) {
-            return;
-        } else {
-            $('.nav-header-burger').toggle("slide", 500);
-        }
-    });
-}
-   
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $(document).on('touchstart', function (evt) {
+            let container = $(".nav-header-burger"),
+                container2 = $(".left-side-nav");
+            if (container.has(evt.target).length === 1) {
+                return;
+            } else if ($('.nav-header-burger').is(':hidden')) {
+                return;
+            } else if (container2.has(evt.target).length === 1) {
+                return;
+            } else {
+                $('.nav-header-burger').toggle("slide", 500);
+            }
+        });
+    } else {
+
+        $(document).on('click', function (evt) {
+            let container = $(".nav-header-burger"),
+                container2 = $(".left-side-nav");
+            if (container.has(evt.target).length === 1) {
+                return;
+            } else if ($('.nav-header-burger').is(':hidden')) {
+                return;
+            } else if (container2.has(evt.target).length === 1) {
+                return;
+            } else {
+                $('.nav-header-burger').toggle("slide", 500);
+            }
+        });
+    }
+
 
     //скролл для кнопок в меню
 
@@ -245,7 +246,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         $('.nav-header-burger').toggle("slide", 500);
 
     });
-    
+
     //E-mail Ajax Send
 
     $("form").submit(function () {
@@ -279,4 +280,3 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     });
 
 });
-
