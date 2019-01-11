@@ -164,7 +164,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             return;
         } else {
             evt.stopImmediatePropagation();
-            evt.preventDefault();
+            evt.preventDefault();   
             $('.nav-header-burger').toggle("slide", 500);
             
 
