@@ -152,8 +152,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         }
     });
 
-
-    $(document).on('touchstart', function (evt) {
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  $(document).on('touchstart', function (evt) {
         let container = $(".nav-header-burger"),
             container2 = $(".left-side-nav");
         if (container.has(evt.target).length === 1) {
@@ -166,7 +166,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             $('.nav-header-burger').toggle("slide", 500);
         }
     });
-
+ } else	{
+  
  $(document).on('click', function (evt) {
         let container = $(".nav-header-burger"),
             container2 = $(".left-side-nav");
@@ -180,6 +181,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             $('.nav-header-burger').toggle("slide", 500);
         }
     });
+}
+   
+
     //скролл для кнопок в меню
 
     $('#toContacts').click(function () {
