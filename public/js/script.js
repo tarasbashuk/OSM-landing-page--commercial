@@ -163,9 +163,10 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         } else if (container2.has(evt.target).length === 1) {
             return;
         } else {
-            $('.nav-header-burger').toggle("slide", 500);
             evt.stopImmediatePropagation();
             evt.preventDefault();
+            $('.nav-header-burger').toggle("slide", 500);
+            
 
         }
     });
