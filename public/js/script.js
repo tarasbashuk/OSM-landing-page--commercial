@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 $('.nav-header-burger').hide();
 
 $('document').ready(function () {
@@ -140,16 +138,11 @@ $('document').ready(function () {
 
     $('.nav-header-burger').css('display', 'flex');
     $('.nav-header-burger').hide();
-//    $('.nav-header-burger').css('width', '50vw');
- 
 
     $('#burgerBtn').click(function (evt) {
         if ($('body').outerWidth() < 576) {
             evt.preventDefault();
-            //            $('.nav-header-burger').css('display', 'flex');
             $('.nav-header-burger').toggle("slide", 500);
-//            evt.stopImmediatePropagation();
-
         }
     });
 
