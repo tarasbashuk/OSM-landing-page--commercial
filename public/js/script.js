@@ -1,4 +1,7 @@
 /*jshint esversion: 6 */
+
+$('.nav-header-burger').hide();
+
 $('document').ready(function () {
 
     //    let widthDoc = $('body').outerWidth();
@@ -136,12 +139,16 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     // бургер
 
 
-    $('.nav-header-burger').hide();
+//    $('.nav-header-burger').hide();
 
     $('#burgerBtn').click(function (evt) {
         if ($('body').outerWidth() < 576) {
             evt.preventDefault();
+//            $('.nav-header-burger').css('display', 'flex');
             $('.nav-header-burger').toggle("slide", 500);
+            evt.stopImmediatePropagation();
+//            $('.nav-header-burger').css('width', '50vw');
+//            $('.nav-header-burger').css('display', 'flex');
         }
     });
 
