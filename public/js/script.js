@@ -153,7 +153,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     });
 
 
-    $(document).on('click touchstart', function (evt) {
+    $(document).on('touchstart', function (evt) {
         let container = $(".nav-header-burger"),
             container2 = $(".left-side-nav");
         if (container.has(evt.target).length === 1) {
@@ -166,8 +166,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             evt.stopImmediatePropagation();
             evt.preventDefault();   
             $('.nav-header-burger').toggle("slide", 500);
-            
-
         }
     });
 
