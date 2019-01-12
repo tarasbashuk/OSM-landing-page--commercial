@@ -736,6 +736,8 @@ textarea:focus {
     padding: 0 30px;
     font-size: .875rem;
     border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -webkit-appearance: none;
     font-weight: 700;
 }
 
