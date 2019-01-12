@@ -511,6 +511,7 @@ body {
 .partners-slider-images {
     display: flex;
     justify-content: space-between;
+    -ms-touch-action: none;
     touch-action: none;
 }
 
@@ -728,7 +729,7 @@ textarea:focus {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
 }
 
-.guest-input input[type='submit'] {
+#submit_contact {
     max-width: 260px;
     height: 40px;
     margin: 2.85rem 0 12.5rem 0;
@@ -1062,7 +1063,7 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .guest-input input[type='submit'] {
+    #submit_contact {
         margin: 0 auto 2rem auto;
     }
 
