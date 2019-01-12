@@ -898,6 +898,22 @@ footer {
     list-style: disc inside;
 }
 
+/* кастомизация модальной формы после сенда инфы  */
+.ui-widget{
+    font-family: "Futura Book";
+    font-size: 1.2em;
+    letter-spacing: 150%;
+}
+.ui-widget-header{
+    background: #395763;
+    color: #fff;
+}
+#ui-id-1{
+    color: #fff;
+}
+
+
+
 /*////////////////// END OF SERVICES DETAILS //////////////////////////*/
 
 /*medias/////////////////////////////////////////////*/
