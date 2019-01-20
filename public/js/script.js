@@ -135,7 +135,7 @@ $('document').ready(function () {
     ///линк для звонка
 
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if (/Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent)) {
         document.getElementById("header-phone").innerHTML = '<a class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </a>';
     } else {
         document.getElementById("header-phone").innerHTML = '<span class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </span>';
@@ -164,7 +164,7 @@ $('document').ready(function () {
         }
     });
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if (/Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent)) {
         $(document).on('touchstart', function (evt) {
             let container = $(".nav-header-burger"),
                 container2 = $(".left-side-nav");

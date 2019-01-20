@@ -24,6 +24,7 @@
 }
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -57,6 +58,8 @@ body {
 
 .section {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -66,9 +69,15 @@ body {
 
 .main-page-header {
     height: 12vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 2.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: fixed;
     font-family: 'Futura Book';
@@ -78,8 +87,14 @@ body {
 }
 
 .small-container-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
@@ -117,12 +132,14 @@ body {
 .contact-tel {
     font-size: .9375rem;
     margin-left: 2rem;
+    text-decoration: none;
 }
 
 .contact-tel:active,
 .contact-tel:visited,
 .contact-tel:link {
     color: #000;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -146,13 +163,22 @@ body {
     height: 100vh;
     background: #f3f7fa url(../imgs/main_background.png) center no-repeat;
     background-size: cover;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .home-section-container {
     margin: 5rem 7rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -172,6 +198,8 @@ body {
 .about-us-section {
     margin-top: 5rem;
     background-color: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
@@ -180,7 +208,12 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     z-index: 0;
 }
@@ -199,7 +232,11 @@ body {
 .about-us-container {
     width: 75rem;
     margin: 0 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
 }
@@ -207,14 +244,24 @@ body {
 .left-side-about-us-container {
     width: 65%;
     padding: 5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
 .indicators {
     width: 30rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     border-bottom: solid 2px #cedfdf;
     padding-bottom: 2.5rem;
@@ -284,6 +331,7 @@ body {
     position: absolute;
     top: 68%;
     left: 15%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-family: 'Futura Bold';
     font-size: 3.2rem;
@@ -353,7 +401,10 @@ body {
 }
 
 .parner-cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     z-index: 1;
     text-align: center;
@@ -363,8 +414,15 @@ body {
 .partner-card {
     width: 20%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -392,7 +450,12 @@ body {
 .partner-info {
     width: auto;
     height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     z-index: 1;
     padding: 0 1rem;
@@ -430,8 +493,14 @@ body {
 .our-offers-directions {
     width: 54rem;
     background-color: #f3f7fa;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 33%;
     flex: 1 0 33%;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 2rem;
 
@@ -482,8 +551,15 @@ body {
 }
 
 .advantages-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -509,19 +585,27 @@ body {
 
 /*slider content*/
 .partners-slider-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-touch-action: none;
     touch-action: none;
 }
 
 .left-img-slider {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 58%;
     flex: 1 1 58%;
     position: relative;
     margin-right: 1.5625rem;
 }
 
 .right-img-slider {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 38%;
     flex: 1 1 38%;
     position: relative;
 }
@@ -650,28 +734,7 @@ body {
 .swiper-pagination-bullet{
     background: black;
 }
-/* .swiper-pagination.swiper-pagination-bullets{
-    margin-top: 55rem;
-} */
-/* .feedback-navagation-dots {
-    margin: 5rem auto;
-    width: 100px;
-}
 
-.dot {
-    margin: 0 3px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 50%;
-    width: .625rem;
-    height: .625rem;
-    background-color: black;
-    cursor: pointer;
-}
-
-.active-dot {
-    background-color: #d7dadb;
-} */
 
 /*contacts section*/
 .contacts-section {
@@ -679,7 +742,11 @@ body {
 }
 
 .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 10px;
 }
@@ -692,8 +759,15 @@ form {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .guest-input label{
@@ -726,6 +800,7 @@ form {
 
 .guest-input input:focus,
 textarea:focus {
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
 }
 
@@ -805,7 +880,11 @@ footer {
 .services-details-home-section {
     min-height: 50vh;
     background-size: cover;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -868,6 +947,7 @@ footer {
 .bg-pipe-piccontainer {
     width: 48%;
     left: 50%;
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
     top: 11.5rem;
 }
@@ -934,19 +1014,6 @@ footer {
         padding: 0 1rem;
     }
 
-    .small-container-header {
-        /*
-        height: 30%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-*/
-    }
-
-    .left-side-nav {
-        /*        height: 70%;*/
-    }
-
     .small-logo-img,
     .nav-header-item,
     .btn-primary,
@@ -989,7 +1056,9 @@ footer {
     }
 
     .parner-cards-container {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
     }
@@ -1043,8 +1112,15 @@ footer {
     }
 
     .contacts {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
         flex-flow: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -1117,9 +1193,16 @@ footer {
 
     .about-us-container {
         width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin: 0;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
     }
@@ -1132,7 +1215,11 @@ footer {
         width: 100%;
         margin: 0;
         padding: 0;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         background-color: #f3f7fa;
     }
@@ -1165,8 +1252,14 @@ footer {
 
     .right-side-about-us-container {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -1194,6 +1287,9 @@ footer {
     }
 
     .parner-cards-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1211,6 +1307,9 @@ footer {
     .partner-card {
         width: 100%;
         height: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 
@@ -1220,6 +1319,8 @@ footer {
 
     .partner-info {
         margin: 0 auto;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -1228,11 +1329,16 @@ footer {
     }
 
     .our-offers-directions {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     }
 
     .our-offers-direction,
     .our-offers-direction-third {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
         flex: 1 50%;
         border: none;
         margin: 0;
@@ -1266,11 +1372,19 @@ footer {
     }
 
     .advantage-card {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
         flex-flow: wrap row;
         padding: 10px;
+        -ms-flex-item-align: baseline;
         align-self: baseline;
         margin: 10px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -1349,9 +1463,17 @@ footer {
     .nav-header-burger-container {
         padding: 5rem 0;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -1379,7 +1501,11 @@ footer {
 
     .burger-logos-container {
         width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
@@ -1404,6 +1530,8 @@ footer {
 
     .indicators {
         max-width: 100%;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
     }
 
@@ -1433,6 +1561,9 @@ footer {
     }
 
     .our-offers-directions {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
         flex-flow: column;
     }
 
@@ -1443,7 +1574,11 @@ footer {
 
     .left-img-slider,
     .right-img-slider {
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
         flex-flow: column;
     }
 
@@ -1457,7 +1592,10 @@ footer {
     }
 
     .service-intro-section {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding-top: 2rem;
     }
@@ -1497,6 +1635,7 @@ footer {
     .service-full-descr-bg-icon {
         width: 65%;
         left: 50%;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
         top: 25rem;
     }
@@ -1504,6 +1643,7 @@ footer {
     .OSM-picture-piccontainer {
         width: 90%;
         right: 50%;
+        -webkit-transform: translate(50%);
         transform: translate(50%);
     }
 
