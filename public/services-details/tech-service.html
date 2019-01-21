@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>OSM LLC</title>
+    <title>OSM LLC - Utilities</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <link rel="stylesheet" href="../css/style-min.css">
     <link rel="icon" type="image/png" href="../imgs/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="../imgs/favicon-16x16.png" sizes="16x16">
+
+</head>
+
+<body>
 </head>
 
 <body>
@@ -29,7 +33,7 @@
             <div class="nav-header-burger-container">
                 <img src="../imgs/burger-logo-img.png" alt="osm logo" class="burger-logo-img">
                 <div>
-                    <div class="nav-header-burger-item"><a href="../index.html" >на главную</a></div>
+                    <div class="nav-header-item"><a href="../index.html" >на главную</a></div>
                     <div class="nav-header-burger-item"><a href="#contacts" id="toContactsLinkBurger">контакты</a></div>
                 </div>
                 <div class="burger-logos-container">
@@ -136,17 +140,26 @@
 <section class="contacts-section">
     <div class="container contacts" id="contacts">
         <div class="guest-input">
-            <form action="">
-                <label for="">Имя</label>
-                <input type="text" name="firstname">
-                <label for="">Номер телефона</label>
-                <input type="text" name="phonenumber" placeholder="+38..."> <br>
-                <label for="">E-mail</label>
-                <input type="text" name="email" placeholder="name@mail.com">
-                <label for="">Чем мы можем вам помочь?</label>
-                <textarea name="comment" placeholder="Ваше сообщение"></textarea>
-                <input type="submit" value="заказать обратную связь" class="btn-primary">
+            <form action="" id="contact-form">
+                Имя <br>
+                <input type="hidden" name="project_name" value="website form full">
+                <!--                 Change!-->
+                <input type="hidden" name="admin_email" value="bashuk.taras@gmail.com">
+                <input type="hidden" name="form_subject" value="website form full">
 
+                <input type="text" name="name" id="name"> <br>
+                Номер телефона <br>
+                <input type="tel" name="website" id="website" placeholder="+38..."> <br>
+                E-mail <br>
+                <input type="text" name="mail" id="mail" placeholder="name@mail.com"> <br>
+                Чем мы можем вам помочь? <br>
+                <textarea name="comment" id="comment" placeholder="Ваше сообщение"></textarea> <br>
+                <input type="submit" value="заказать обратную связь" class="btn-primary" id="submit_contact">
+                <div id="information-sent" title="Ваше сообщение отправлено!">
+                    <p>
+                        Наш менеджер свяжется с вами в ближайшее время!
+                    </p>
+                </div>
             </form>
         </div>
         <div class="contact-us">
@@ -165,12 +178,11 @@
 </section>
 <footer>
     <img class="footer-logo" src="../imgs/logo-footer.png" alt="Company's logo">
-
 </footer>
 <script src="../js/jquery-min-3.3.1.js"></script>
-<script src="../js/jquery-ui.min.js"></script>
 <script src="../js/jquery.mobile.custom.min-1.5.1.js"></script>
 <script src="../js/swiper.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
 <script src="../js/script.js"></script>
 </body>
 </html>
