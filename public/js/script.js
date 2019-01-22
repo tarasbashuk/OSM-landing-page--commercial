@@ -22,7 +22,7 @@ $('document').ready(function () {
         }
     });
 
-    //    let widthDoc = $('body').outerWidth();
+       let widthDoc = $('body').outerWidth();
     // dot navigation slider
     // $('.feedback-slider:not(:first)').hide();
     // $('.dot').click(function () {
@@ -139,6 +139,17 @@ $('document').ready(function () {
         document.getElementById("header-phone").innerHTML = '<span class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </span>';
         document.getElementById("contact-phones").innerHTML = '<h4><a href="#">+38 (044) 255 55 55</a></h4><h4><a href="#">+38 (097) 980 98 98</a></h4>';
     }
+        // бэкграунд для хедера
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.main-page-header').css('background-color', 'rgba(255, 255, 255, 0.8)');
+                } else {
+                    $('.main-page-header').css('background-color', '');
+                }
+            });
+        });
+    
 
     // бургер
 
