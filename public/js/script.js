@@ -119,8 +119,10 @@ $('document').ready(function () {
 
     if (/Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent)) {
         document.getElementById("header-phone").innerHTML = '<a class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </a>';
+         document.getElementById("contact-phones").innerHTML = '<h4><a href="tel:+380442555555">+38 (044) 255 55 55</a></h4><h4><a href="tel:+380979809898">+38 (097) 980 98 98</a></h4>';
     } else {
         document.getElementById("header-phone").innerHTML = '<span class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </span>';
+        document.getElementById("contact-phones").innerHTML = '<h4><a href="#">+38 (044) 255 55 55</a></h4><h4><a href="#">+38 (097) 980 98 98</a></h4>';
     }
 
     // бэкграунд для хедера
