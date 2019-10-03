@@ -22,7 +22,7 @@ $('document').ready(function () {
         }
     });
 
-    //    let widthDoc = $('body').outerWidth();
+       let widthDoc = $('body').outerWidth();
     // dot navigation slider
     // $('.feedback-slider:not(:first)').hide();
     // $('.dot').click(function () {
@@ -64,7 +64,7 @@ $('document').ready(function () {
     $('.partners-slider-images:not(:first)').hide();
 
     $('.partners-slider-images').on('swipeleft', function (e) {
-        if ($('body').outerWidth() < 768) {
+        if ($('body').innerWidth() < 768) {
             e.stopPropagation();
             let currentIndex = $('.active-nav-button').index();
             $('.partners-slider-images').eq(currentIndex).hide();
@@ -79,7 +79,7 @@ $('document').ready(function () {
     });
 
     $('.partners-slider-images').on('swiperight', function (e) {
-        if ($('body').outerWidth() < 768) {
+        if ($('body').innerWidth() < 768) {
             e.stopPropagation();
             let currentIndex = $('.active-nav-button').index();
             $('.partners-slider-images').eq(currentIndex).hide();
@@ -131,10 +131,7 @@ $('document').ready(function () {
         }
     });
 
-
-    ///линк для звонка
-
-
+     ///линк для звонка
     if (/Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent)) {
         document.getElementById("header-phone").innerHTML = '<a class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </a>';
          document.getElementById("contact-phones").innerHTML = '<h4><a href="tel:+380442555555">+38 (044) 255 55 55</a></h4><h4><a href="tel:+380979809898">+38 (097) 980 98 98</a></h4>';
@@ -142,17 +139,17 @@ $('document').ready(function () {
         document.getElementById("header-phone").innerHTML = '<span class="contact-tel"  href="tel:+380442555555">+38 (044) 255 55 55 </span>';
         document.getElementById("contact-phones").innerHTML = '<h4><a href="#">+38 (044) 255 55 55</a></h4><h4><a href="#">+38 (097) 980 98 98</a></h4>';
     }
-
-    // бэкграунд для хедера
-    $(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.main-page-header').css('background-color', 'rgba(255, 255, 255, 0.8)');
-            } else {
-                $('.main-page-header').css('background-color', '');
-            }
+        // бэкграунд для хедера
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.main-page-header').css('background-color', 'rgba(255, 255, 255, 0.8)');
+                } else {
+                    $('.main-page-header').css('background-color', '');
+                }
+            });
         });
-    });
+    
 
     // бургер
 
